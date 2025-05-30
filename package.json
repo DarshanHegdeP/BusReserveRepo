@@ -1,0 +1,21 @@
+{
+  "name": "bus-reservation-system",
+  "version": "1.0.0",
+  "description": "Bus Reservation System with Node.js and MySQL",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["bus", "reservation", "booking", "nodejs", "mysql"],
+  "author": "Your Name",
+  "license": "MIT"
+}
