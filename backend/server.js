@@ -28,14 +28,28 @@ const dbConfig = {
 let db;
 
 // Initialize database connection
+// async function initDB() {
+//   try {
+//     db = await mysql.createConnection(dbConfig);
+//     console.log('Connected to MySQL database');
+    
+//     // Create tables if they don't exist
+//     await createTables();
+//     await insertSampleData();
+//   } catch (error) {
+//     console.error('Database connection failed:', error);
+//   }
+// }
+
 async function initDB() {
   try {
     db = await mysql.createConnection(dbConfig);
     console.log('Connected to MySQL database');
     
-    // Create tables if they don't exist
-    await createTables();
-    await insertSampleData();
+    // Don't call these anymore if DB already has everything
+    // await createTables();
+    // await insertSampleData();
+    
   } catch (error) {
     console.error('Database connection failed:', error);
   }
