@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 //   database: 'bus_reservation'
 // };
 const dbConfig = {
-  host: 'mydbinstance.cpas8w8k20h9.ap-south-1.rds.amazonaws.com',
+  host: 'database-1.cpas8w8k20h9.ap-south-1.rds.amazonaws.com',
   user: 'admin',
   password: 'Darshan944',
   database: 'bus_reservation'
@@ -269,14 +269,14 @@ app.get('/', (req, res) => {
 });
 
 // Initialize database and start server
-// initDB().then(() => {
+initDB().then(() => {
 //   app.listen(PORT, () => {
 //     console.log(`Server running on http://localhost:${PORT}`);
-//   });
+//  
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on http://0.0.0.0:${PORT}`);
 });
-
+ });
 
 
 module.exports = app;
