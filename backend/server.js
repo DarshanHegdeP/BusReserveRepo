@@ -19,9 +19,9 @@ app.use(express.static(path.join(__dirname, '../public')));
 //   database: 'bus_reservation'
 // };
 const dbConfig = {
-  host: 'database-2.cpas8w8k20h9.ap-south-1.rds.amazonaws.com',
+  host: 'database-1.cpas8w8k20h9.ap-south-1.rds.amazonaws.com',
   user: 'admin',
-  password: 'Darshan944',
+  password: 'darshan123',
   database: 'bus_reservation'
 };
 
